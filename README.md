@@ -3,8 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
 ## Setup
-Install [NodeJS](https://nodejs.org/en/download/releases/) v6.x (or latest LTS release)
+Install [NodeJS](https://nodejs.org/en/download/releases/) v6.x (or latest LTS release) and then run `npm install` after downloading the repo.
   * If you are using multiple versions of Node for development/testing, please use a Node version manager, such as [nvm](https://github.com/creationix/nvm)
+
 
 ## Development server
 
