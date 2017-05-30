@@ -1,3 +1,30 @@
-<h1>
-  {{title}}
-</h1>
+<h1 id="title---card-dealer" class="capitalize">card dealer</h1>
+
+<form id="form---number-of-players">
+    <div>
+        <label id="label---number-of-players" class="capitalize">number of players</label>
+        <input id="input---number-of-players" type="number" [(ngModel)]="numberOfPlayers" name="number-of-players" min="1" max="52">
+    </div>
+    <div>
+        <label id="label---number-of-players-per-card" class="capitalize">number of cards per player</label>
+        <span id="span---number-of-players-per-card">{{cardsPerPlayer}}</span>
+    </div>
+    <button id="button---shuffle-and-deal-cards" class="capitalize" (click)="shuffleAndDealCards()">shuffle and deal cards</button>
+</form>
+
+<div *ngIf="dealtCards">
+    <div *ngFor="let player of dealtCards">
+        <h2 id="h2---player-{{player.playerIndex + 1}}">{{player.name}}</h2>
+        <div *ngFor="let playerCard of player.cards">
+            <ul id="ul---player-card">{{playerCard.rank}} of {{playerCard.suite}}</ul>
+        </div>
+
+    </div>
+</div>
+
+<div *ngIf="shuffledDeck.length > 0 && haveDealtCards">
+    <h2 id="h2---remaining-cards" class="capitalize">remaining cards</h2>
+    <div *ngFor="let card of shuffledDeck">
+        <ul id="ul---remaining-card">{{card.rank}} of {{card.suite}}</ul>
+    </div>
+</div>
