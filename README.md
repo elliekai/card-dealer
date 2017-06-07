@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
+## Specs
+* App should create a deck of [standard playing cards](https://en.wikipedia.org/wiki/Standard_52-card_deck)
+* App should shuffle the deck
+* App should deal as many cards as possible to a number of players specified by the user
+* App should should use unit tests
+
 ## Setup
 Install [NodeJS](https://nodejs.org/en/download/releases/) v6.x (or latest LTS release) and then run `npm install` after downloading the repo.
   * If you are using multiple versions of Node for development/testing, please use a Node version manager, such as [nvm](https://github.com/creationix/nvm)
